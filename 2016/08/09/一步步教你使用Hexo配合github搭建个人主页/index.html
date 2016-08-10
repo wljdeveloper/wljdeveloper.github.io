@@ -99,7 +99,7 @@
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2659145-31a97294d57e3175.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2659145-d43ac141a928b497.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2659145-016f773411512018.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2016-08-09T00:57:58.243Z">
+<meta property="og:updated_time" content="2016-08-10T07:57:42.753Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一步步教你使用Hexo配合github搭建个人主页">
 <meta name="twitter:description" content="前言
@@ -382,15 +382,15 @@
 <h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><blockquote>
 <p>上面git node 都已经安装成功了，开始安装Hexo,Hexo的安装方式是使用命令行的形式，直接在桌面或者文件夹任意位置右键，选git bash ,在出现的窗口中输入下面命令。</p>
 </blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo -g</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo -g</div></pre></td></tr></table></figure>
 <blockquote>
 <p>-g表示全局安装, npm默认为当前项目安装,npm在新版的node中就包含了，如过想验证之前安装node时候，是否npm安装成功，也是用验证版本号的方式，在dos命令窗口输入 npm -v.<br>等这个命令执行完后，我们在电脑的任意盘符新建一个文件夹，名字随意起，一般命名为Hexo,然后在新建的文件夹中邮件选git bash ，<code>依次</code>输入下面命令，安装Hexo.</p>
 </blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo init  </div><div class="line">hexo g</div><div class="line">hexo s</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo init  </div><div class="line">hexo g</div><div class="line">hexo s</div></pre></td></tr></table></figure>
 <blockquote>
 <p>init 初始化hexo到你指定的目录<br>g 自动根据当前目录下文件,生成静态网页<br>server 运行本地服务<br>出现下面一行，说明本地服务运行成功。</p>
 </blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">INFO Hexo <span class="keyword">is</span> running at http://<span class="number">0.0</span><span class="number">.0</span><span class="number">.0</span>:<span class="number">4000</span>/. Press Ctrl+C to stop.</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">INFO Hexo is running at http:<span class="comment">//0.0.0.0:4000/. Press Ctrl+C to stop.</span></div></pre></td></tr></table></figure>
 <blockquote>
 <p>接着在浏览器输入<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000</a>就可以看到效果。<br>本地服务退出方式为 ctrl + c 组合键。<br>在本地看到的样子应该是如下图。</p>
 </blockquote>
@@ -406,11 +406,11 @@
 <h3 id="创建本地ssh-key"><a href="#创建本地ssh-key" class="headerlink" title="创建本地ssh key"></a>创建本地ssh key</h3><blockquote>
 <p>检验本地是否已存在key<br>桌面右键，选择git bash ，依次输入命令 </p>
 </blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd ~</div><div class="line">cd .ssh</div><div class="line">ls</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd ~</div><div class="line">cd .ssh</div><div class="line">ls</div></pre></td></tr></table></figure>
 <blockquote>
 <p>存在key的话都会显示id_rsa.pub和id_dsa.pub这两个文件没有key什么都不会显示</p>
 </blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C <span class="string">"your_email@mail.com"</span></div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C <span class="string">"your_email@mail.com"</span></div></pre></td></tr></table></figure>
 <blockquote>
 <p>引号中输入的是你的邮箱，这里会提示输入一个文件名来保存ssh key也可以什么都不输入，使用默认的id_rsa.pub和id_dsa.pub回车之后需要输入两次密码：密码我们如果放心的话直接回车，就是没有密码，这样简单。</p>
 </blockquote>
@@ -420,15 +420,15 @@
 <h3 id="本地站点配置"><a href="#本地站点配置" class="headerlink" title="本地站点配置"></a>本地站点配置</h3><blockquote>
 <p>进入到本地创建的Hexo 文件夹中，打开Hexo目录下的_config.xml文件，用文本方式打开，直接拉到最下面找到，修改为如下样式</p>
 </blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy: </div><div class="line">  type: git </div><div class="line">  repository: git@github.com:wljdev/wljdev.github.io.git  </div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy: </div><div class="line">  type: git </div><div class="line">  repository: git<span class="meta">@github</span>.com:wljdev/wljdev.github.io.git  </div><div class="line">  branch: master</div></pre></td></tr></table></figure>
 <h3 id="测试、提交到仓库"><a href="#测试、提交到仓库" class="headerlink" title="测试、提交到仓库"></a>测试、提交到仓库</h3><blockquote>
 <p>还是右键选择git bash ,依次输入下面命令</p>
 </blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g</div><div class="line">hexo s --debug</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g</div><div class="line">hexo s --debug</div></pre></td></tr></table></figure>
 <blockquote>
 <p>g 部署，s –debug 本地调试，现在本地测试没问题就可以提交到git仓库了,本地测试： <a href="http://0.0.0.0:4000/" target="_blank" rel="external">http://0.0.0.0:4000/</a><br>不出意外，本地测试没有问题，下面就要提交到git了,依次输入命令如下</p>
 </blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure>
 <blockquote>
 <p>这个时候在浏览器中输入： <a href="http://wljdev.github.io" target="_blank" rel="external">http://wljdev.github.io</a>  就可以访问到本地站点了，和本地测试是一样的。</p>
 </blockquote>
