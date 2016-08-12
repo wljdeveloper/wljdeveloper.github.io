@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-12T13:57:42.266Z</updated>
+  <updated>2016-08-12T15:04:43.234Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,88 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo之Next主题优化</title>
+    <link href="http://yoursite.com/2016/08/12/Hexo%E4%B9%8BNext%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/"/>
+    <id>http://yoursite.com/2016/08/12/Hexo之Next主题优化/</id>
+    <published>2016-08-12T15:03:08.000Z</published>
+    <updated>2016-08-12T15:04:43.234Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="设置中文"><a href="#设置中文" class="headerlink" title="设置中文"></a>设置中文</h2><blockquote>
+<p>找到站点配置文件（hexo根目录下的称为站点配置文件，主题文件夹下的称为主题配置文件），找到如下字段，更新为如下即可</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">language: zh-Hans</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="添加导航栏"><a href="#添加导航栏" class="headerlink" title="添加导航栏"></a>添加导航栏</h2><blockquote>
+<p>如下图，我们可以添加多样的导航栏，这些在我们主题的配置文件中都是用的</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/2659145-ee6316f0935dc622.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="next主题导航栏图片"></p>
+<blockquote>
+<p>添加导航栏方式：直接打开hexo安装根目录下的themes文件夹中，我用的是next主题（根据你主题而定），然后打开next文件夹，更改<code>_config.yml</code>文件，用文本方式打开，找到如下位置，默认情况下有些事注释掉的，你可以试着打开，我选择全部不注释，导航栏就是上图所示。</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/2659145-b3efe57a5c24b3a1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="导航栏配置图"></p>
+<blockquote>
+<p>home: /   首页<br>  categories: /categories   分类<br>  archives: /archives   归档<br>  tags: /tags    标签<br>  about: /about   关于<br>  commonweal: /404.html   公益404</p>
+</blockquote>
+<h2 id="添加导航栏相应页面"><a href="#添加导航栏相应页面" class="headerlink" title="添加导航栏相应页面"></a>添加导航栏相应页面</h2><blockquote>
+<p>导航栏我们刚刚添加成功了，这个时候如果部署 提交，你点击的话，可能是给你报错了，404 提示你找不到页面，这是因为我们只是创建了这个链接，而页面并没有创建，默认情况下home archives 页面都是不用自己创建的，所以分类、标签、关于、404都是要我们自己创建的</p>
+</blockquote>
+<h3 id="创建分类"><a href="#创建分类" class="headerlink" title="创建分类"></a>创建分类</h3><blockquote>
+<p>在hexo安装根目录下执行如下命令</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">new</span> page <span class="string">"categories"</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>执行完，在hexo根目录下的source文件夹中会多出一个categories文件夹，里面默认有一个index.md的文件，这就是我们创建的导航栏的分类页面<br>我更改为如下样子</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/2659145-11b2e70a8976fa05.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="分类页面图片"></p>
+<blockquote>
+<p>type:”categories” 类型<br>comments: false   这个是关闭多少评论，后面会说到添加评论</p>
+</blockquote>
+<h3 id="创建标签"><a href="#创建标签" class="headerlink" title="创建标签"></a>创建标签</h3><blockquote>
+<p>在hexo安装根目录下执行如下命令</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">new</span> page <span class="string">"tags"</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>执行完，在hexo根目录下的source文件夹中会多出一个tags文件夹，里面默认有一个index.md的文件，这就是我们创建的导航栏的分类页面<br>我更改为如下样子</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/2659145-c1216e7ad8cfbfbd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="标签页面图片"></p>
+<h3 id="创建关于"><a href="#创建关于" class="headerlink" title="创建关于"></a>创建关于</h3><blockquote>
+<p>在hexo安装根目录下执行如下命令</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">new</span> page <span class="string">"about"</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>执行完，在hexo根目录下的source文件夹中会多出一个about文件夹，里面默认有一个index.md的文件，这就是我们创建的导航栏的分类页面<br>我更改为如下样子</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/2659145-13a7470a48bfe231.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="关于页面图片"></p>
+<blockquote>
+<p>这里说一下，这个关于页面，如果你前端技术很好，这个页面可以自己定制，做一个很漂亮的页面，我这里就顺便弄了一下。</p>
+</blockquote>
+<h3 id="创建404"><a href="#创建404" class="headerlink" title="创建404"></a>创建404</h3><blockquote>
+<p>404页面创建与前面有所不同，方式应该有很多种，我选择的是直接创建一个404.html放在了source文件夹下面，默认404导航选项，就会找到这个页面<br>最后看一下hexo根目录下source文件夹创建多个导航栏标签页后的内容</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/2659145-f90ba64330952bb1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="source文件夹目录图片"></p>
+<blockquote>
+<p>未完，待续。。。。。。</p>
+</blockquote>
+<p><strong><em> 个人主页：<a href="http://www.wanglijun.vip" target="_blank" rel="external">http://www.wanglijun.vip</a></em></strong><br><strong><em> csdn主页：<a href="http://blog.csdn.net/mynamelijun" target="_blank" rel="external">http://blog.csdn.net/mynamelijun</a></em></strong><br><strong><em> 简书主页：<a href="http://www.jianshu.com/users/b6cc5e05848d/latest_articles" target="_blank" rel="external">http://www.jianshu.com/users/b6cc5e05848d/latest_articles</a></em></strong></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;设置中文&quot;&gt;&lt;a href=&quot;#设置中文&quot; class=&quot;headerlink&quot; title=&quot;设置中文&quot;&gt;&lt;/a&gt;设置中文&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;找到站点配置文件（hexo根目录下的称为站点配置文件，主题文件夹下的称为主题配置文件），找到如下字段，更新为如下即可&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;language: zh-Hans&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>一步步教你使用Hexo配合github搭建个人主页</title>
