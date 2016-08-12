@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-12T15:04:43.234Z</updated>
+  <updated>2016-08-12T15:17:14.661Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hexo之Next主题优化</title>
+    <title>Hexo之Next主题优化(一)</title>
     <link href="http://yoursite.com/2016/08/12/Hexo%E4%B9%8BNext%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/"/>
     <id>http://yoursite.com/2016/08/12/Hexo之Next主题优化/</id>
     <published>2016-08-12T15:03:08.000Z</published>
-    <updated>2016-08-12T15:04:43.234Z</updated>
+    <updated>2016-08-12T15:17:14.661Z</updated>
     
     <content type="html"><![CDATA[<h2 id="设置中文"><a href="#设置中文" class="headerlink" title="设置中文"></a>设置中文</h2><blockquote>
 <p>找到站点配置文件（hexo根目录下的称为站点配置文件，主题文件夹下的称为主题配置文件），找到如下字段，更新为如下即可</p>
