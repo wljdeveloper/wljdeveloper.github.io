@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-12T15:17:14.661Z</updated>
+  <updated>2016-08-13T01:33:07.976Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/08/12/Hexo%E4%B9%8BNext%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/"/>
     <id>http://yoursite.com/2016/08/12/Hexo之Next主题优化/</id>
     <published>2016-08-12T15:03:08.000Z</published>
-    <updated>2016-08-12T15:17:14.661Z</updated>
+    <updated>2016-08-13T01:33:07.976Z</updated>
     
     <content type="html"><![CDATA[<h2 id="设置中文"><a href="#设置中文" class="headerlink" title="设置中文"></a>设置中文</h2><blockquote>
 <p>找到站点配置文件（hexo根目录下的称为站点配置文件，主题文件夹下的称为主题配置文件），找到如下字段，更新为如下即可</p>
@@ -72,9 +72,9 @@
 <p>这里说一下，这个关于页面，如果你前端技术很好，这个页面可以自己定制，做一个很漂亮的页面，我这里就顺便弄了一下。</p>
 </blockquote>
 <h3 id="创建404"><a href="#创建404" class="headerlink" title="创建404"></a>创建404</h3><blockquote>
-<p>404页面创建与前面有所不同，方式应该有很多种，我选择的是直接创建一个404.html放在了source文件夹下面，默认404导航选项，就会找到这个页面<br>最后看一下hexo根目录下source文件夹创建多个导航栏标签页后的内容</p>
+<p>404页面创建与前面有所不同，方式应该有很多种，我选择的是直接创建一个404.html放在了hexo根目录下的对应主题下的source文件夹下面，默认404导航选项，就会找到这个页面<br>最后看一下hexo根目录下source文件夹创建多个导航栏标签页后的内容</p>
 </blockquote>
-<p><img src="http://upload-images.jianshu.io/upload_images/2659145-f90ba64330952bb1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="source文件夹目录图片"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2659145-27646641fe66f981.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="404页面位置图"></p>
 <blockquote>
 <p>未完，待续。。。。。。</p>
 </blockquote>
